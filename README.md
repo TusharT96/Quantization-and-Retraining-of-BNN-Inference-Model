@@ -1,5 +1,6 @@
 # Quantization-and-Retraining-of-DNN-Inference-Model
-ABSTRACT
+
+
 Deep Neural Networks (DNNs) have gained wide-spread importance for many Artificial
 Intelligence(AI) applications, Speech Recognition, Robotics and Computer Vision. The demand for
 smart/intelligent mobile devices, the deterring computational cost and memory requirements in the
@@ -11,5 +12,7 @@ smaller size, called as Quantization. The proposed quantized inference schemes w
 the efficiency by restoring the model accuracy to the close levels as that of the native one with
 smaller model size. The changes in the efficiency must be evident even on MobileNets which is a
 well-known model for run-time efficiency.
+
+
 KEYWORDS – Quantization, inference framework, training, efficiency, deep neural networks,
 mixed-arithmetic
