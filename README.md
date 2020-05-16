@@ -1,18 +1,12 @@
 # Quantization-and-Retraining-of-BNN-Inference-Model
 
 
-Deep Neural Networks (DNNs) have gained wide-spread importance for many Artificial
-Intelligence(AI) applications, Speech Recognition, Robotics and Computer Vision. The demand for
-smart/intelligent mobile devices, the deterring computational cost and memory requirements in the
-case of deep neural networks based models are increasing with its wide-spread real-time and nonreal time applications. Thus, the project focuses on more accurate and efficient inference schemes
-by quantization and training. A quantized inference framework that efficiently is able to implement
-mixed-arithmetic and that handles zero-points is proposed. Also, the approach includes saving the
-accuracy of relatively smaller model size and decreasing the deep neural network size to relatively
-smaller size, called as Quantization. The proposed quantized inference schemes will help improve
-the efficiency by restoring the model accuracy to the close levels as that of the native one with
-smaller model size. The changes in the efficiency must be evident even on MobileNets which is a
-well-known model for run-time efficiency.
+Deep Neural Networks (DNNs) have gained wide-spread importance for many Artificial Intelligence(AI) applications including Speech Recognition, Robotics, and Computer Vision. The demand for smart/intelligent mobile devices, the deterring computational cost, energy consumption and memory requirements in the case of deep neural networks based models are increasing with its wide-spread real-time and non-real time applications. Hence, the objective of this project focused on developing more accurate and efficient inference schemes by quantization and retraining the model, whose network layers are pruned and consumes less resources by the process of Adaptation. A quantized inference framework that is efficiently able to implement mixed-arithmetic and that handles zero-points is proposed. For this project, the quantization was applied on the ResNet model with weights quantized from 32-bit Tensor to a 1-bit representation  and feature maps from 32-bit to 8-bit representation using the Binary Neural Network(BNN) approach.
 
 
-KEYWORDS – Quantization, inference framework, training, efficiency, deep neural networks,
-mixed-arithmetic
+The approach included saving the accuracy and optimizing the energy efficiency of a relatively smaller model size using the concept of dataflow scheduling, i.e., to implement an energy-efficient scheduling of the data for the Deep Neural Networks. To make the designed AlexNet model adapt to a specified target, resource, or energy budget, NetAdapt was applied to the pre-trained network(AlexNet), which improved the overall latency and accuracy and these results have been illustrated in following chapters. Thus the accuracy of the AlexNet+NetAdapt model (after 13 iterations of Network Adaptation and Pruning) was increased by 28% from that of the AlexNet model with the number of Floating Point Operations per second(FLOPS) reduced from 710133440.0 to 454945680.0. By the NetAdapt implementation the output feature map size was also reduced from [64 192 384 256 256 4096 4096 10] to [48 160 336 184 224 1952 4096 10]. All these included a mechanism of decreasing the deep neural network size to a relatively smaller size, by the use of Network Pruning. The proposed quantized inference scheme helps improve the efficiency by restoring the model accuracy to the close levels as that of the native one with smaller model size. More improvements in the model can be achieved by further increasing the number of iterations and training with many more different image datasets. The future scope of this project is that it can be applied to many real time applications such as Autonomous driving systems where a simple model, with less number of FLOPs and memory access becomes very crucial.
+
+
+
+KEYWORDS – Quantization, inference framework, training, efficiency, deep neural networks, mixed-arithmetic, Row Stationary Dataflow.		
+							
