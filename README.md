@@ -1,4 +1,4 @@
-# Quantization-and-Retraining-of-DNN-Inference-Model
+# Quantization-and-Retraining-of-BNN-Inference-Model
 
 
 Deep Neural Networks (DNNs) have gained wide-spread importance for many Artificial
